@@ -1,0 +1,1 @@
+let Details1:[number,string,number]=[1,"ravi", 34]
