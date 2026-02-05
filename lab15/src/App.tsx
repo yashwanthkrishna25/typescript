@@ -19,7 +19,7 @@ function App() {
             
               websiteName="My Traveller Website"
               tagline="We bring your ideas to life"
-              imageUrl="https://example.com/home-image.jpg"
+              imageUrl="https://img.freepik.com/free-photo/view-travel-items-assortment-still-life_23-2149617645.jpg?semt=ais_hybrid&w=740&q=80"
             />
           }
         />

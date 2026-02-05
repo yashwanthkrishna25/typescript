@@ -1,69 +1,3 @@
-// const Services = () => {
-//   return (
-//     <div className="page">
-//       <h1>Our Services</h1>
-//       <ul>
-//         <li>Web Development</li>
-//         <li>Mobile Apps</li>
-//         <li>Designing</li>
-//         <li>Consulting</li>
-//       </ul>
-//       <img src="https://solidwp.com/wp-content/uploads/2022/08/Services-Pages-1024x537.png" alt="services" />
-//     </div>
-//   );
-// };
-
-// export default Services;
-
-// interface Service {
-//   title: string;
-//   description: string;
-// }
-
-// const servicesData: Service[] = [
-//   {
-//     title: "Web Development",
-//     description: "Building fast, responsive, and modern websites."
-//   },
-//   {
-//     title: "Mobile Apps",
-//     description: "Creating Android and iOS applications."
-//   },
-//   {
-//     title: "Designing",
-//     description: "UI/UX design for better user experience."
-//   },
-//   {
-//     title: "Consulting",
-//     description: "Professional IT and software consulting."
-//   }
-// ];
-
-// const Services: React.FC = () => {
-//   return (
-//     <div className="page services">
-//       <h1>Our Services</h1>
-
-//       <div className="services-container">
-//         {servicesData.map((service, index) => (
-//           <div className="service-card" key={index}>
-//             <h3>{service.title}</h3>
-//             <p>{service.description}</p>
-//           </div>
-//         ))}
-//       </div>
-
-//       <img
-//         src="https://solidwp.com/wp-content/uploads/2022/08/Services-Pages-1024x537.png"
-//         alt="services"
-//         className="services-img"
-//       />
-//     </div>
-//   );
-// };
-
-// export default Services;
-
 
 interface Service {
   title: string;
@@ -71,16 +5,40 @@ interface Service {
 }
 
 const servicesData: Service[] = [
-  { title: "Custom Web Design", description: "We create beautiful, modern websites tailored to your brand." },
-  { title: "SEO Optimization", description: "Boost your website's visibility on search engines." },
-  { title: "Mobile App Development", description: "iOS and Android apps to grow your business." },
-  { title: "Consulting & Support", description: "Expert advice to improve your digital strategy." }
+  {
+    title: "Flight Booking",
+    description: "Book domestic and international flights at the best prices."
+  },
+  {
+    title: "Hotel Reservations",
+    description: "Comfortable stays from budget hotels to luxury resorts."
+  },
+  {
+    title: "Tour Packages",
+    description: "Customized tour packages for solo, family, and group travel."
+  },
+  {
+    title: "Travel Insurance",
+    description: "Stay protected with comprehensive travel insurance plans."
+  },
+  {
+    title: "Visa Assistance",
+    description: "Hassle-free visa processing and documentation support."
+  },
+  {
+    title: "24/7 Travel Support",
+    description: "Round-the-clock assistance throughout your journey."
+  }
 ];
 
 const Services: React.FC = () => {
   return (
     <div className="page services">
-      <h1>Our Services</h1>
+      <h1>Our Travel Services</h1>
+      <p className="services-tagline">
+        Everything you need for a smooth and memorable journey ✈️
+      </p>
+
       <div className="services-container">
         {servicesData.map((service, index) => (
           <div className="service-card" key={index}>
@@ -89,9 +47,10 @@ const Services: React.FC = () => {
           </div>
         ))}
       </div>
+
       <img
-        src="https://example.com/your-services-image.jpg"
-        alt="services"
+        src="https://img.freepik.com/free-photo/travel-trip-vacation-holiday-journey-tourism_53876-133944.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="travel services"
         className="services-img"
       />
     </div>
@@ -99,4 +58,5 @@ const Services: React.FC = () => {
 };
 
 export default Services;
+
 
